@@ -8,7 +8,8 @@ class Nodo
 public:
     Estudent *date;
     Nodo *siguiente;
-    Nodo(Estudent*,Nodo*);
+    Nodo(Estudent*);
+
 Nodo();
     Estudent buscar_Carnet();
 

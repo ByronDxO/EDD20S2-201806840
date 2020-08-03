@@ -1,11 +1,13 @@
 #include "nodo.h"
 
-Nodo::Nodo(Estudent* date, Nodo* siguiente)
+Nodo::Nodo(Estudent* date)
 {
 this ->date = date;
-this -> siguiente = siguiente;
+this ->siguiente=NULL;
 }
 Nodo::Nodo(){}
 Estudent Nodo::buscar_Carnet(){
     return *date;
+
+
 }

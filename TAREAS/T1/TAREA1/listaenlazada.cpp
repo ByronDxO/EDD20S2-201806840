@@ -7,9 +7,14 @@ this->first = NULL;
 }
 
 void ListaEnlazada::Insertar(Estudent* n){
-    Nodo* q = new Nodo(n,first);
-    Nodo* asd = first;
-    asd->siguiente=q;
+   if(first!=NULL){
+       Nodo* q = new Nodo(n);
+       Nodo* asd = first;
+       asd->siguiente=q;
+   }else {
+       Nodo* q = new Nodo(n);
+      first =q ;
+   }
 }
 void ListaEnlazada::Buscar(long carnet){
     Nodo *temporal = this->first;

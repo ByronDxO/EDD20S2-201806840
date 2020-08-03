@@ -19,3 +19,4 @@ void Estudent::set_Estudent(QString nombre, long carnet){
     this->nombre = nombre ;
     this ->carnet= carnet;
 }
+

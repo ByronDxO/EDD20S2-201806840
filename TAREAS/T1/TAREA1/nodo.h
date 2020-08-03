@@ -4,12 +4,14 @@
 
 class Nodo
 {
-private:
 
-    Estudent* date;
-    Nodo* siguiente;
 public:
-    Nodo(Estudent,Nodo);
+    Estudent *date;
+    Nodo *siguiente;
+    Nodo(Estudent*,Nodo*);
+Nodo();
+    Estudent buscar_Carnet();
+
 };
 
 #endif // NODO_H

@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         estudent.cpp \
+        listaenlazada.cpp \
         main.cpp \
         nodo.cpp
 
@@ -29,4 +30,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     estudent.h \
+    listaenlazada.h \
     nodo.h

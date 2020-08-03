@@ -13,13 +13,12 @@ string name ;
 long carnet;
 QString asd;
 ListaEnlazada list ;
-
-do{
+bool t = false ;
+while(t==false){
     printf(" \n opcion 1 insertar estudiante  \n opcion 2 buscar estudiante \n opcion 3 eliminar estudiante \n presione 9 para salir");
     cin>>contador;
 
  if(contador==1){
-
      printf(" \n ingrese el nombre \n");
      cin>>name;
      printf(" \n ingrese el carnet (solo numeros por favor) \n ");
@@ -33,8 +32,6 @@ do{
      printf("ingrese el carnet");
      cin>>carnet;
      list.Buscar(carnet);
-
-
  }else if(contador==3){
 
      printf("ingrese el carnet");
@@ -42,12 +39,10 @@ do{
      list.Eliminar(carnet);
  }else {
      contador=9;
+     t=true;
      printf("Adios");
  }
 
-
-
-
-}while (contador!=9);
+}
 
 }

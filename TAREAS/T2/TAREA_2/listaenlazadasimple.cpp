@@ -59,7 +59,7 @@ listaenlazadasimple::listaenlazadasimple()
                 this->cabeza = cabeza->getSiguiente();
                 delete temp;
                 this->tamanio--;
-                cout<<"Su estudiante ha sido eliminado de su lista :o\n"<<endl;
+                cout<<"Su estudiante ha sido eliminado de su lista \n"<<endl;
             }else{
 
                 if(temp == (this->fin)){
@@ -70,7 +70,7 @@ listaenlazadasimple::listaenlazadasimple()
                 anterior->setSiguiente(temp->getSiguiente());
                 delete temp;
                 this->tamanio--;
-                cout<<"Su estudiante ha sido eliminado de su lista :o\n"<<endl;
+                cout<<"Su estudiante ha sido eliminado de su lista \n"<<endl;
             }
 
         }
@@ -87,7 +87,7 @@ listaenlazadasimple::listaenlazadasimple()
                 temp = temp->getSiguiente();
             }
         }else{
-            cout<<"Su lista esta vacia! D:"<<endl;
+            cout<<"Su lista esta vacia"<<endl;
         }
         cout<<"\n";
     }
@@ -111,5 +111,5 @@ listaenlazadasimple::listaenlazadasimple()
             listaVacia->insertarLista(nombreEstudiante, carnetEstudiante); //constante
             aux = aux->getSiguiente();//constante 1
         }
-        cout<<"\n\tSu lista ha sido clonada! :D\n";//constante 1
+        cout<<"\n\tSu lista ha sido clonada\n";//constante 1
     }

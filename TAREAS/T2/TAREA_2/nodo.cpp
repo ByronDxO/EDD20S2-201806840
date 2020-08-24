@@ -22,9 +22,9 @@ nodo::nodo(estudiante *Estudiante)
     }
 
     estudiante* nodo::getEstudiante(){
-        return this->estudiante;
+        return this->Estudiante;
     }
 
-    void nodo::setEstudiante(estudiante* estudiante){
-        this->estudiante=estudiante;
+    void nodo::setEstudiante(estudiante* Estudiante){
+        this->Estudiante=Estudiante;
     }
